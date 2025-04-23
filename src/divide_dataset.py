@@ -34,10 +34,10 @@ def divide_dataset(path, fraction):
         else:
             shutil.move(os.path.join(path, image), os.path.join(test_category_dir, image))
 
-    print(f"Imágenes divididas: {num_images} en {train_category_dir}, {len(images) - num_images} en {test_category_dir}")
+    print(f"Divided images: {num_images} en {train_category_dir}, {len(images) - num_images} en {test_category_dir}")
 
 # Example usage for each category
 divide_dataset(r"data\cloudy", fraction = 80)
-divide_dataset(r"data\dessert", fraction = 80)
+divide_dataset(r"data\desert", fraction = 80)
 divide_dataset(r"data\green_area", fraction = 80)
 divide_dataset(r"data\water", fraction = 80)
